@@ -14,10 +14,15 @@ const NavBar = () => {
                     <li><Link href="#" underline="hover">
                         {'Products'}
                     </Link></li>
+                    <li><Link href="#" underline="hover">
+                        {'Products-2'}
+                    </Link></li>
+                    <li><Link href="#" underline="hover">
+                        {'Products-3'}
+                    </Link></li>
                     <li><Link className='cartWidget' href="#" underline="hover">
                         {'Cart'}            <CartWidget />
                     </Link></li>
-
                 </ul>
             </nav>
         </div>
