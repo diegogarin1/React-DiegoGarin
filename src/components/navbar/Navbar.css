@@ -1,0 +1,12 @@
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    list-style: none;
+    align-items: center;
+}
+
+.cartWidget {
+    display: flex;
+    align-items: center;
+}
