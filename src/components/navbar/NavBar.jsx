@@ -1,32 +1,29 @@
 import React from 'react'
-import CartWidget from "../cartwidget/CartWidget"
-import Link from '@mui/material/Link/Link';
-import "./NavBar.css"
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
-    return (
-        <div>
-            <nav>
-                <ul className='navBar'>
-                    <li><Link href="#" underline="hover">
-                        {'Home'}
-                    </Link></li>
-                    <li><Link href="#" underline="hover">
-                        {'Products'}
-                    </Link></li>
-                    <li><Link href="#" underline="hover">
-                        {'Products-2'}
-                    </Link></li>
-                    <li><Link href="#" underline="hover">
-                        {'Products-3'}
-                    </Link></li>
-                    <li><Link className='cartWidget' href="#" underline="hover">
-                        {'Cart'}            <CartWidget />
-                    </Link></li>
-                </ul>
-            </nav>
-        </div>
-    )
-}
+  return (
+    <nav>
+      <ul>
+        <Link  to="/">
+          Home
+        </Link>
+        <Link  to="/men">
+          Men
+        </Link>
+        <Link  to="/women">
+          Women
+        </Link>
+        <Link  to="/electronics">
+          Electronics
+        </Link>
+        <Link  to="/jewelry">
+          Jewelry        </Link>
+          <Link  to="/cart">
+          Cart        </Link>
+      </ul>
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;
